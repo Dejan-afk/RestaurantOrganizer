@@ -191,7 +191,7 @@ public class Main {
             }
             return -1;
         }
-        //Bug here
+        
         private static void insertAndMoveHashMap(HashMap<Integer, Integer> groupsOnTable, int amountOfSeating, int indexToInsertSeating, HashMap<Integer, Integer> newHashMap,Queue<Integer> valuesFromOldMap ){
             int range = indexToInsertSeating + amountOfSeating;
             for(int i = 1; i < groupsOnTable.size() + amountOfSeating + 1; i++){
@@ -258,7 +258,7 @@ public class Main {
     }
 
 
-    public static ArrayList<ArrayList<Integer>> getSeatingOptions(boolean[] table){  //seems to work
+    public static ArrayList<ArrayList<Integer>> getSeatingOptions(boolean[] table){  
         ArrayList<ArrayList<Integer>> options = new ArrayList<>();
         int tableLength = table.length;
         var option = new ArrayList<Integer>();
